@@ -2,13 +2,13 @@ package br.com.cmendes.pokedex.model
 
 import com.google.gson.annotations.SerializedName
 
-data class Type(
+data class Types(
 
-    @SerializedName("name") val name: String = ""
+        @SerializedName("type") var type: Type
 
 
 ) {
     override fun toString(): String {
-        return "$name"
+        return "$type"
     }
 }

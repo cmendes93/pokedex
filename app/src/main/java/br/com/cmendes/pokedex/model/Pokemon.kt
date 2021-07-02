@@ -6,6 +6,8 @@ class Pokemon (
 
     @SerializedName("id") val id: String = "",
     @SerializedName("name") val nome: String = "",
-    @SerializedName("sprites") val sprites: Sprites
+    @SerializedName("sprites") val sprites: Sprites,
+    @SerializedName("types") var types: ArrayList<Types> = ArrayList()
+
 
 )

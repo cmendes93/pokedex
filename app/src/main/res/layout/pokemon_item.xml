@@ -23,17 +23,27 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvNomePokemon"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nome"
-                android:textStyle="bold" />
-
-            <TextView
                 android:id="@+id/tvNumero"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Id"
+                android:text="@string/id"
+                android:textColor="#5E5656"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvNomePokemon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nomePokemon"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo"
                 android:textColor="#5E5656"
                 android:textSize="14sp"
                 android:textStyle="bold" />

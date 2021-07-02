@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.Pokedex">
+        android:theme="@style/Theme.Pokedex"
+        >
         <activity android:name=".view.SobreActivity"/>
         <activity android:name=".view.ListaPokemons"/>
         <activity android:name=".view.MainActivity">

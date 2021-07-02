@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Pokedex</string>
     <string name="titulo">Pokedex</string>
+    <string name="nomePokemon">Nome</string>
+    <string name="id">Id</string>
+    <string name="integrante1">Carlos Mendes - 337459</string>
+    <string name="integrante2">Felipe Birches - 338269</string>
+    <string name="Integrante3">Guilherme Moraes - 336810</string>
+    <string name="tipo">Tipo</string>
 </resources>

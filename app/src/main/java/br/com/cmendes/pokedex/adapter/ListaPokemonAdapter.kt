@@ -43,14 +43,20 @@ class ListaPokemonAdapter(private val pokemons: List<Pokemon>,
         fun bindView(pokemon: Pokemon,
                      listener: (Pokemon) -> Unit) = with(itemView) {
 
-
             tvNomePokemon.text = pokemon.nome
             tvNumero.text = pokemon.id
+
+            var tipoConcatenado : String = ""
+            for (tipo in pokemon.types){
+                tipoConcatenado += tipo.type.name + " "
+            }
+
+            tvTipo.text = tipoConcatenado
 
             Picasso.get()
                 .load(pokemon?.sprites?.front_default)
                 .error(R.mipmap.ic_launcher)
-                .placeholder(R.mipmap.ic_launcher)
+                .placeholder(R.drawable.pikachu)
                 .into(ivPokemon);
 
             setOnClickListener { listener(pokemon) }
